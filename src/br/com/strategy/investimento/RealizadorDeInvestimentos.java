@@ -1,4 +1,4 @@
-package br.com.designpatterns.investimento;
+package br.com.strategy.investimento;
 
 public class RealizadorDeInvestimentos {
 	

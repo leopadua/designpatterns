@@ -1,4 +1,4 @@
-package br.com.designpatterns.imposto;
+package br.com.strategy.imposto;
 
 public class CalculadorDeImposto {
 	
