@@ -1,13 +1,22 @@
 package br.com.ChainofResponsibility.conta;
 
+import java.util.Calendar;
+
 public class Conta {
 
 	private String nome;
 	private double saldo;
 	private String agencia;
 	private String numero;
+	private Calendar DataAbertura;
 
+	public Calendar getDataAbertura() {
+		return DataAbertura;
+	}
 
+	public void setDataAbertura(Calendar dataAbertura) {
+		DataAbertura = dataAbertura;
+	}
 
 	public Conta(String nome, double saldo){
 		this.nome = nome;

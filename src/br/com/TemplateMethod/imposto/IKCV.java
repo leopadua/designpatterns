@@ -1,9 +1,16 @@
 package br.com.TemplateMethod.imposto;
 
 import br.com.ChainofResponsibility.desconto.Item;
+import br.com.strategy.imposto.Imposto;
 import br.com.strategy.imposto.Orcamento;
 
 public class IKCV extends TemplateDeImpostoCondicional{
+	
+	public IKCV(){}
+	
+	public IKCV(Imposto outroImposto){
+		super(outroImposto);
+	}
 	
 	private boolean temItemMaiorQue100ReaisNo(Orcamento orcamento){
 		for(Item item : orcamento.getItens()){

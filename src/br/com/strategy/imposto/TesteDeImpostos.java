@@ -3,9 +3,9 @@ package br.com.strategy.imposto;
 public class TesteDeImpostos {
 	
 	public static void main(String[] args) {
-		Imposto iss = new ISS();
-		Imposto icms = new ICMS();
-		Imposto iccc = new ICCC();
+		Imposto iss = new ISS(null);
+		Imposto icms = new ICMS(null);
+		Imposto iccc = new ICCC(null);
 		
 		Orcamento orcamento = new Orcamento(3004.00);
 		

@@ -1,6 +1,11 @@
 package br.com.strategy.imposto;
 
-public class ICCC implements Imposto {
+public class ICCC extends Imposto {
+
+	public ICCC(Imposto OutroImposto) {
+		super(OutroImposto);
+	}
+	public ICCC(){}
 
 	@Override
 	public double calcula(Orcamento orcamento) {

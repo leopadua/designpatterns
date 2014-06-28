@@ -1,8 +1,15 @@
 package br.com.TemplateMethod.imposto;
 
+import br.com.strategy.imposto.Imposto;
 import br.com.strategy.imposto.Orcamento;
 
 public class ICPP extends TemplateDeImpostoCondicional{
+	
+	public ICPP(Imposto OutroImposto){
+		super(OutroImposto);
+	}
+	
+	public ICPP(){}
 
 	@Override
 	public double minimaTaxacao(Orcamento orcamento) {
