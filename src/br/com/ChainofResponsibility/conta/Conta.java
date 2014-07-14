@@ -2,13 +2,16 @@ package br.com.ChainofResponsibility.conta;
 
 import java.util.Calendar;
 
+import br.com.state.conta.EstadoDaConta;
+
 public class Conta {
 
 	private String nome;
-	private double saldo;
+	public double saldo;
 	private String agencia;
 	private String numero;
 	private Calendar DataAbertura;
+	public EstadoDaConta estado;
 
 	public Calendar getDataAbertura() {
 		return DataAbertura;
@@ -46,5 +49,13 @@ public class Conta {
 	
 	public void setNumero(String numero) {
 		this.numero = numero;
+	}
+	
+	public void saca(double valor) {
+		estado.saca(this, valor);
+	}
+
+	public void deposita(double valor) {
+		estado.deposita(this, valor);
 	}
 }
